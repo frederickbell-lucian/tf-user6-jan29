@@ -23,6 +23,7 @@ variable "tag_owner" {
 }
   
 variable "num_of_vm" {
-    type = 1
+    type = number
+    default = "2"
   
 }
