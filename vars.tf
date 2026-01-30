@@ -23,9 +23,6 @@ variable "tag_owner" {
 }
   
 variable "num_of_vm" {
-    type = number
+    type = 1
   
 }
-
-
-
