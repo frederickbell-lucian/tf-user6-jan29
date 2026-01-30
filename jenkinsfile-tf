@@ -42,5 +42,9 @@ pipeline {
         sh "terraform apply --auto-approve"
       }
     }
+    stage('Cleanup Workspace') {
+        steps {
+          deleteDir()
+    }
   }
 }
