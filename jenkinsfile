@@ -1,0 +1,18 @@
+pipeline {
+  agent any
+  stages {
+    stage('pre-requiste') {
+      steps {
+        sh '''
+        ls -l 
+        pwd
+        terraform -version
+        git version
+        aws sts get-caller-identity
+        '''
+      }
+    }
+  }
+}
+
+ 
